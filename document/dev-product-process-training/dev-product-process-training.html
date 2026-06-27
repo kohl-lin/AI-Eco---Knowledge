@@ -2972,25 +2972,25 @@
     </section>
 
     <section class="slide">
-      <div class="kicker">产品思维培养 2 | 完整功能链路</div>
-      <h2>深圳乘车码包含前台体验和后台协作</h2>
-      <p class="subtitle">功能 = 前台体验 + 后台链路 + 异常处理 + 上线观测。</p>
+      <div class="kicker">产品思维培养 2 | 从用户任务反推链路</div>
+      <h2>乘车码不是一个页面，而是一条任务闭环</h2>
+      <p class="subtitle">先看用户为什么打开它，再反推页面、状态、后端、验证和上线监控。</p>
       <div class="system-map">
-        <div class="node flow"><span class="tag">用户</span><b>高频进站</b><span>赶时间、少停顿、能快速确认当前状态</span></div>
-        <div class="node flow"><span class="tag teal">乘车页</span><b>城市、二维码、刷新</b><span>城市切换、30 秒刷新、截图/网络提示</span></div>
-        <div class="node"><span class="tag gold">出行/我的</span><b>线路、记录、FAQ</b><span>线路图、线路筛选、乘车记录、客服入口</span></div>
-        <div class="node flow"><span class="tag purple">后端/配置</span><b>码生成、状态回传</b><span>字段、状态码、错误码、幂等和日志先对齐</span></div>
-        <div class="node flow"><span class="tag green">设备/下游</span><b>扫码、校验、通行</b><span>提前准备线路样例、设备模拟器、失败码</span></div>
-        <div class="node"><span class="tag red">运营/监控</span><b>公告、成功率、回滚</b><span>上线后关注刷码成功率、异常订单和用户反馈</span></div>
+        <div class="node flow"><span class="tag">用户视角</span><b>为什么打开它</b><span>闸机前、赶时间、少停顿，需要快速确认当前码可用。</span></div>
+        <div class="node flow"><span class="tag teal">乘车页设计</span><b>主动作放第一屏</b><span>二维码、地铁/公交 tab、刷新状态和城市信息要清楚。</span></div>
+        <div class="node flow"><span class="tag gold">状态设计</span><b>异常时用户不懵</b><span>加载、过期、网络失败、未开通、截图、维护都要有反馈。</span></div>
+        <div class="node flow"><span class="tag purple">后端/配置</span><b>让页面真的可用</b><span>码生成、状态回传、权限、错误码、日志和配置先对齐。</span></div>
+        <div class="node flow"><span class="tag green">验证样例</span><b>让研发能校验</b><span>测试账号、use case、失败码、设备/下游模拟要提前准备。</span></div>
+        <div class="node"><span class="tag red">运营监控</span><b>上线后能看见</b><span>关注刷码成功率、打开到可用码耗时、失败原因和用户反馈。</span></div>
       </div>
-      <div class="source-note">深圳地铁场景包含乘车、出行、我的三类模块；地铁与公交城市的产品结构会不同。</div>
-      <div class="footer"><span>系统视角</span><span>14 / 32</span></div>
+      <div class="source-note">产品不一定要自己设计技术方案，但要把状态、依赖和验证样例讲清楚，让研发知道要支撑什么。</div>
+      <div class="footer"><span>任务闭环</span><span>14 / 32</span></div>
     </section>
 
     <section class="slide">
       <div class="kicker">产品思维培养 3 | 思维网域</div>
       <h2>产品判断来自持续回答 6 个问题</h2>
-      <p class="subtitle">AI 可以帮你生成页面和代码，但它不会替你判断什么应该被保留、什么应该被删掉。</p>
+      <p class="subtitle">所有问题都在回答一件事：用户主任务是什么，哪些东西要服务它，哪些东西要让位。</p>
       <div class="thinking-map">
         <div class="thinking-col">
           <div class="thinking-item"><b>用户是谁</b><span>高频通勤、新用户、异常用户、客服/运营，路径和诉求不同。</span></div>
@@ -3013,7 +3013,7 @@
     <section class="slide">
       <div class="kicker">产品思维培养 4 | 业务理解</div>
       <h2>产品要看到几个版本后的东西</h2>
-      <p class="subtitle">当前版本可以只做 MVP，但产品要告诉研发：业务未来可能往哪里长，哪些地方要留扩展，哪些地方可以先简单做。</p>
+      <p class="subtitle">当前版本可以只做 MVP，但产品要说清未来方向，避免每加一个场景都推翻重来。</p>
       <div class="compare">
         <div class="badgood bad">
           <div><span class="tag red">只看当前功能</span></div>
@@ -3040,7 +3040,7 @@
     <section class="slide">
       <div class="kicker">产品思维培养 5 | 需求质量</div>
       <h2>产品写需求：从功能名写到可验收场景</h2>
-      <p class="subtitle">好的需求是让研发、设计、测试都知道：用户为什么需要、做到什么算完成。</p>
+      <p class="subtitle">好的需求不是文字更长，而是让产品、研发和验收方对同一件事有共同理解。</p>
       <div class="compare">
         <div class="badgood bad">
           <div><span class="tag red">功能名写法</span></div>
@@ -3059,6 +3059,7 @@
     <section class="slide">
       <div class="kicker">产品思维培养 6 | 需求模板</div>
       <h2>好需求模板：目标、范围、验收先写清</h2>
+      <p class="subtitle">AI 可以帮你写 PRD，但你要知道好需求长什么样，才能判断它写出来的东西能不能交付。</p>
       <div class="template-card">
         <div class="template-cell"><b>背景</b><span>为什么现在要做？业务/用户哪里卡住？</span></div>
         <div class="template-cell"><b>用户</b><span>谁用？新用户、老用户、运营、客服是否不同？</span></div>
@@ -3076,13 +3077,13 @@
     <section class="slide">
       <div class="kicker">产品思维培养 7 | 成功 Case</div>
       <h2>成功的首屏：1 秒打开，即可扫码进站</h2>
-      <p class="subtitle">“首屏”也叫 above the fold：用户不需要滚动，第一眼看到的内容。乘车码的首屏视觉重点应该是二维码。</p>
+      <p class="subtitle">高频刚需场景里，好产品不是让用户觉得功能很多，而是让用户几乎不用思考就能完成任务。</p>
       <div class="case-two-col">
         <img class="case-shot" src="assets/shenzhen-ride-code.png" alt="深圳微信乘车码页面截图">
         <div>
           <div class="case-principles">
             <div class="principle-card"><b>🎫 主任务最大</b><span>二维码占据首屏中心，用户打开后直接扫码，不需要先理解页面。</span></div>
-            <div class="principle-card"><b>🧭 辅助入口让位</b><span>地图、实时公交、福利、我的都存在，但不会抢二维码焦点。</span></div>
+            <div class="principle-card"><b>🧭 辅助入口让位</b><span>地图、实时公交、福利、我的都存在，但通过大小、颜色和位置降低权重。</span></div>
             <div class="principle-card"><b>📣 商业曝光靠后</b><span>广告在下半屏露出一部分，提供曝光，但不打断进站任务。</span></div>
             <div class="principle-card"><b>⚡ 操作成本低</b><span>高频通勤场景里，用户目标不是“探索服务”，而是快速通过闸机。</span></div>
           </div>
@@ -3098,7 +3099,7 @@
     <section class="slide">
       <div class="kicker">产品思维培养 8 | Bad Case</div>
       <h2>过度智能化：把 1 秒任务变成 1 分钟任务</h2>
-      <p class="subtitle">AI 能力应该服务主任务，而不是挡在用户和主任务之间。通勤进站场景里，速度比“智能感”更重要。</p>
+      <p class="subtitle">这不是反 AI，而是 AI 能力要放在合适位置。通勤进站场景里，速度比“智能感”更重要。</p>
       <div class="bad-ai-demo">
         <div class="ai-phone" aria-label="过度智能化出行 App 草图">
           <div class="ai-search">“我现在在公司，帮我规划最快到深圳北站的方式，顺便判断要不要打车。”</div>
@@ -3118,12 +3119,12 @@
             <div class="badgood bad">
               <div><span class="tag red">过度设计</span></div>
               <div class="quote-text">先输入意图，再等 AI 判断，再选择路线，最后才找到乘车码。</div>
-              <p class="small">这个需求看起来更智能，实际把“扫码进站”藏在多层决策后面。</p>
+              <p class="small">这个需求听起来很 all in one，实际把“扫码进站”藏在多层决策后面。</p>
             </div>
             <div class="badgood good">
               <div><span class="tag green">正确取舍</span></div>
               <div class="quote-text">打开即展示二维码，AI 放到辅助场景。</div>
-              <p class="small">路线规划、广告、服务推荐可以做，但不能阻断首屏主任务。</p>
+              <p class="small">路线规划、广告、服务推荐可以做，但不能挡在用户和二维码之间。</p>
             </div>
           </div>
         </div>
