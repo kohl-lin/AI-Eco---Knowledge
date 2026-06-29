@@ -2560,10 +2560,10 @@
       <div class="toc-sublist">
         <button class="toc-subitem" type="button" data-slide="21">22 模块封面</button>
         <button class="toc-subitem" type="button" data-slide="22">23 方法来源</button>
-        <button class="toc-subitem" type="button" data-slide="23">24 长期成本</button>
-        <button class="toc-subitem" type="button" data-slide="24">25 研发流程</button>
-        <button class="toc-subitem" type="button" data-slide="25">26 交付状态</button>
-        <button class="toc-subitem" type="button" data-slide="26">27 阶段准备</button>
+        <button class="toc-subitem" type="button" data-slide="23">24 研发流程</button>
+        <button class="toc-subitem" type="button" data-slide="24">25 交付状态</button>
+        <button class="toc-subitem" type="button" data-slide="25">26 阶段准备</button>
+        <button class="toc-subitem" type="button" data-slide="26">27 长期成本</button>
         <button class="toc-subitem" type="button" data-slide="27">28 风险表达</button>
         <button class="toc-subitem" type="button" data-slide="28">29 测试重要性</button>
       </div>
@@ -3225,22 +3225,7 @@
     </section>
 
     <section class="slide">
-      <div class="kicker">研发管理流程 1 | 长期成本</div>
-      <h2>成熟研发要管理技术债和可用性</h2>
-      <p class="subtitle">功能上线只是开始。真正影响团队效率的，是未来能不能改、线上能不能用、出事能不能恢复。</p>
-      <div class="sit-grid">
-        <div class="sit-card"><span class="tag red">技术债</span><b>今天省下的时间，未来会加倍还</b><span>为了赶进度留下的 hardcode、临时字段、绕路逻辑，要明确 owner 和偿还时间。</span></div>
-        <div class="sit-card"><span class="tag teal">可用性</span><b>业务真的能稳定使用</b><span>不是本地跑通一次，而是线上主路径可用、异常可解释、降级可执行。</span></div>
-        <div class="sit-card"><span class="tag gold">可维护性</span><b>下一个人能看懂、能改</b><span>模块边界、接口含义、配置来源和异常策略要能被交接。</span></div>
-        <div class="sit-card"><span class="tag purple">可观测</span><b>线上问题能定位</b><span>关键日志、错误码、指标、trace id 要在开发时就设计进去。</span></div>
-        <div class="sit-card"><span class="tag green">可恢复</span><b>出事能止损</b><span>灰度、开关、回滚、告警阈值和值守安排，是发布方案的一部分。</span></div>
-        <div class="sit-card"><span class="tag">可沉淀</span><b>经验进入下一次流程</b><span>复盘、工单、文档让团队记忆不只存在某个人脑子里。</span></div>
-      </div>
-      <div class="footer"><span>技术债与可用性</span><span>24 / 32</span></div>
-    </section>
-
-    <section class="slide">
-      <div class="kicker">研发管理流程 2</div>
+      <div class="kicker">研发管理流程 1</div>
       <h2>成熟研发，关注的是交付状态，不只是代码进度</h2>
       <p class="subtitle">一个需求从“能开发”到“线上稳定”，中间每一步都要有清楚的进入条件和退出交付物。</p>
       <div class="dev-split">
@@ -3261,11 +3246,11 @@
           </div>
         </div>
       </div>
-      <div class="footer"><span>研发流程</span><span>25 / 32</span></div>
+      <div class="footer"><span>研发流程</span><span>24 / 32</span></div>
     </section>
 
     <section class="slide">
-      <div class="kicker">研发管理流程 3 | 交付状态</div>
+      <div class="kicker">研发管理流程 2 | 交付状态</div>
       <h2>把研发流程拆成 6 个可流转的状态</h2>
       <p class="subtitle">每个状态都有进入条件和退出交付物；PIC 的作用，是保证这个状态真的能往下走。</p>
       <div class="pic-table">
@@ -3278,11 +3263,11 @@
         <div class="pic-row"><div class="pic-cell"><b>可恢复</b><span>线上进入稳定</span></div><div class="pic-cell">告警阈值、错误码归因、止损条件、升级路径。</div><div class="pic-cell">问题复盘、修复计划、技术债、下版本改进项。</div></div>
       </div>
       <div class="source-note">一个人可以负责多个状态，但每个状态的进入/退出标准要明确。</div>
-      <div class="footer"><span>研发交付状态</span><span>26 / 32</span></div>
+      <div class="footer"><span>研发交付状态</span><span>25 / 32</span></div>
     </section>
 
     <section class="slide">
-      <div class="kicker">研发管理流程 4 | 阶段交付物</div>
+      <div class="kicker">研发管理流程 3 | 阶段交付物</div>
       <h2>进入每个阶段前，研发都要准备下一步材料</h2>
       <p class="subtitle">阶段准备不是临时补材料，而是把下一批合作方需要的信息提前交出来，并沉淀成可追踪的文档和工单。</p>
       <div class="sit-grid">
@@ -3297,7 +3282,22 @@
         <h3>文档不是为了留痕</h3>
         <p class="small mt-22">技术文档、边界说明、工单系统和复盘文档，是为了让团队记忆不只存在聊天记录和某个人脑子里。</p>
       </div>
-      <div class="footer"><span>阶段准备</span><span>27 / 32</span></div>
+      <div class="footer"><span>阶段准备</span><span>26 / 32</span></div>
+    </section>
+
+    <section class="slide">
+      <div class="kicker">研发管理流程 4 | 长期成本</div>
+      <h2>成熟研发要管理技术债和可用性</h2>
+      <p class="subtitle">功能上线只是开始。真正影响团队效率的，是未来能不能改、线上能不能用、出事能不能恢复。</p>
+      <div class="sit-grid">
+        <div class="sit-card"><span class="tag red">技术债</span><b>今天省下的时间，未来会加倍还</b><span>为了赶进度留下的 hardcode、临时字段、绕路逻辑，要明确 owner 和偿还时间。</span></div>
+        <div class="sit-card"><span class="tag teal">可用性</span><b>业务真的能稳定使用</b><span>不是本地跑通一次，而是线上主路径可用、异常可解释、降级可执行。</span></div>
+        <div class="sit-card"><span class="tag gold">可维护性</span><b>下一个人能看懂、能改</b><span>模块边界、接口含义、配置来源和异常策略要能被交接。</span></div>
+        <div class="sit-card"><span class="tag purple">可观测</span><b>线上问题能定位</b><span>关键日志、错误码、指标、trace id 要在开发时就设计进去。</span></div>
+        <div class="sit-card"><span class="tag green">可恢复</span><b>出事能止损</b><span>灰度、开关、回滚、告警阈值和值守安排，是发布方案的一部分。</span></div>
+        <div class="sit-card"><span class="tag">可沉淀</span><b>经验进入下一次流程</b><span>复盘、工单、文档让团队记忆不只存在某个人脑子里。</span></div>
+      </div>
+      <div class="footer"><span>技术债与可用性</span><span>27 / 32</span></div>
     </section>
 
     <section class="slide">
